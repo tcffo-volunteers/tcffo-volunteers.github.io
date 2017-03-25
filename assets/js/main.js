@@ -108,13 +108,13 @@
 //		(function() {
 
 			// Vars.
-//				var $form = document.querySelectorAll('#signup-form')[0],
-//					$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
-//					$message;
+				var $form = document.querySelectorAll('#signup-form')[0],
+					$submit = document.querySelectorAll('#signup-form input[type="submit"]')[0],
+					$message;
 
 			// Bail if addEventListener isn't supported.
-//				if (!('addEventListener' in $form))
-//					return;
+				if (!('addEventListener' in $form))
+					return;
 
 			// Message.
 //				$message = document.createElement('span');
@@ -139,36 +139,36 @@
 
 			// Events.
 			// Note: If you're *not* using AJAX, get rid of this event listener.
-				$form.addEventListener('submit', function(event) {
+//				$form.addEventListener('submit', function(event) {
 
-					event.stopPropagation();
-					event.preventDefault();
+//					event.stopPropagation();
+//					event.preventDefault();
 
 					// Hide message.
-						$message._hide();
+//						$message._hide();
 
 					// Disable submit.
-						$submit.disabled = true;
+//						$submit.disabled = true;
 
 					// Process form.
 					// Note: Doesn't actually do anything yet (other than report back with a "thank you"),
 					// but there's enough here to piece together a working AJAX submission call that does.
-						window.setTimeout(function() {
+//						window.setTimeout(function() {
 
 							// Reset form.
-								$form.reset();
+//								$form.reset();
 
 							// Enable submit.
-								$submit.disabled = false;
+//								$submit.disabled = false;
 
 							// Show message.
-								$message._show('success', 'Thank you!');
+//								$message._show('success', 'Thank you!');
 								//$message._show('failure', 'Something went wrong. Please try again.');
 
-						}, 750);
+//						}, 750);
 
-				});
+//				});
 
-		})();
+//		})();
 
-})();
+//})();
